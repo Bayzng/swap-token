@@ -1,0 +1,126 @@
+.headerFoot {
+  background-color: #ffffff;
+  color: #001219;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.mailing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mailing h1 {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-wrap: wrap;
+}
+
+.mailing button {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 50px;
+  margin-bottom: 2.5em;
+}
+
+.footer_box {
+  padding: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer_box_social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 30px;
+  color: #001219;
+  border-radius: 100px;
+}
+
+.footer_button {
+  background-color: white;
+  padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  width: 2.5rem;
+}
+
+.footer_button:hover {
+  background-color: #4e54c8;
+  transition: 0.3s;
+}
+
+
+.footer_box_text {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 18px;
+}
+
+.footer_box_text h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.footer_box_Privacy:hover {
+  text-decoration: underline;
+  transition: all 1s ease-in;
+}
+
+.footer_box_Terms:hover {
+  text-decoration: underline;
+  transition: all 1s ease-in;
+}
+
+.footer_box_EmailUs:hover {
+  text-decoration: underline;
+  transition: all 1s ease-in;
+}
+
+/* Media query*/
+@media only screen and (max-width: 1024px) {
+  .headerFoot {
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+  }
+
+  section {
+    font-size: 45px;
+    border-radius: 50px;
+  }
+
+  .footer_box_social {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .footer_box {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: calc(-4rem);
+  }
+  .footer_box_social,
+  .footer_box_text {
+    width: 100%;
+    justify-content: center;
+    margin: 1.2em 0;
+  }
+
+  .footer_box_text {
+    gap: 15px;
+  }
+}
